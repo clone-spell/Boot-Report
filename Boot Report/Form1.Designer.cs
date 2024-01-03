@@ -141,7 +141,7 @@
             // 
             this.cbYear.FormattingEnabled = true;
             this.cbYear.Location = new System.Drawing.Point(296, 13);
-            this.cbYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbYear.Margin = new System.Windows.Forms.Padding(4);
             this.cbYear.Name = "cbYear";
             this.cbYear.Size = new System.Drawing.Size(179, 25);
             this.cbYear.TabIndex = 4;
