@@ -58,7 +58,7 @@ namespace Boot_Report
             string month = _inputParameter.month;
             string year = _inputParameter.year;
             string day;
-            int noOfDays = GetDaysInMonth(month);
+            int noOfDays = GetDaysInMonth(month, year);
 
             string filePath;
 
@@ -149,7 +149,7 @@ namespace Boot_Report
 
         //methods
         //get days in month
-        public static int GetDaysInMonth(string month)
+        public static int GetDaysInMonth(string month, string y)
         {
             int daysInMonth = 0;
 
@@ -175,7 +175,7 @@ namespace Boot_Report
                             daysInMonth = 30;
                             break;
                         case 2: // February
-                            int year = DateTime.Now.Year; // Use the current year for simplicity
+                            int year = int.Parse(y); // Use the current year for simplicity
                             daysInMonth = DateTime.IsLeapYear(year) ? 29 : 28;
                             break;
                     }
